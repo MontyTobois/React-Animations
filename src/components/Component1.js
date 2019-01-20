@@ -14,11 +14,12 @@ export default function Component1() {
             <p>"quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"</p>
             <Spring
               from={{ number: 0 }}
-              to={{ number: 10 }}>
+              to={{ number: 10 }}
+              config={{duration:10000}}>
               {props => (
                 <div style = {props}>
                   <h1 style = {counter}>
-                    {props.number}
+                    {props.number.toFixed()}
                   </h1>
                 </div>
               )}
