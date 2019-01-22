@@ -14,7 +14,11 @@ export class Component2 extends Component {
             <div style={a2style}>
               <h1>Component 2</h1>
               <p>"quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"</p>
-              <button></button>
+              <button style={btn}
+              onClick={this.props.toggle}
+              >
+              Toggle Button
+              </button>
             </div>
           </div>
         )}
@@ -26,6 +30,11 @@ export class Component2 extends Component {
 const a2style = {
   background: 'slateblue',
   color:  'white',
+  padding: '1.5rem'
+}
+const btn = {
+  background: 'yellow',
+  color:  'black',
   padding: '1.5rem'
 }
 
